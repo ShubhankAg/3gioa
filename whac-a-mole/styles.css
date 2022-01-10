@@ -1,0 +1,62 @@
+:root {
+  --color: white;
+  --red:rgb(167, 43, 43);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: var(--color);
+  font-family: sans-serif;
+  background-color: rgb(51, 51, 51);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 40px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.board {
+  width: 450px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 1px var(--color);
+  background-image: url("mole-hidden.png");
+  background-size: cover;
+}
+
+.mole {
+  background-image: url("mole.png");
+  background-size: cover;
+}
+
+#restart {
+  padding: 10px 20px;
+  color: white;
+  background-color: var(--red);
+  border-color: var(--color);
+  border-radius: 5px;
+  font-size: 1rem;
+
+  transition: 200ms;
+}
+
+#restart:hover {
+  transform: translateY(-5px);
+}
